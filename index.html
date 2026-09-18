@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Malla Curricular</title>
+
+    <style>
+        body {
+            background-color: rgb(170, 170, 134);
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th {
+            background-color: #64b888;
+            color: white;
+            padding: 15px;
+            border: 2px solid rgb(71, 2, 2);
+        }
+
+        td {
+            padding: 12px;
+            border: 2px solid rgb(116, 4, 4);
+        }
+
+        /* Color para filas impares */
+        tr:nth-child(odd) {
+            background-color: #dff5d8;
+        }
+
+        /* Color para filas pares */
+        tr:nth-child(even) {
+            background-color: #b8e6ae;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>=============================================</h2>
+
+    <h2>
+        Nombre Completo: Hernandez Garza Saul Alejandro <br>
+        Matrícula: 2226064 <br>
+        Hora Clase: J-N1
+    </h2>
+
+    <h2>=============================================</h2>
+
+    <h1>Malla Curricular</h1>
+
+    <table>
+
+        <tr>
+            <th>Semestre 1</th>
+            <th>Semestre 2</th>
+            <th>Semestre 3</th>
+        </tr>
+
+        <tr>
+            <td>calculo diferencial</td>
+            <td>Calculo integral</td>
+            <td>Ecuaciones diferenciales</td>
+        </tr>
+
+        <tr>
+            <td>Metodologia de la programacion</td>
+            <td>ondas y calor</td>
+            <td>electricidad y magnetismo</td>
+        </tr>
+
+        <tr>
+            <td>Algebra</td>
+            <td>aplicacion practicad de programacion</td>
+            <td>estructura de datos y diseño algoritmos</td>
+        </tr>
+
+        <tr>
+            <td>mecanica clasica</td>
+            <td>liderazgo y emprendimiento</td>
+            <td>optimizacion</td>
+           
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td>dibujo para ingenieria</td>
+        </tr>
+
+
+    </table>
+
+
+    <script>
+
+        // Obtener la hora actual
+        let hora = new Date().getHours();
+
+        let mensaje;
+
+        if (hora < 12) {
+            mensaje = "¡Buenos días! Bienvenido a mi página web.";
+        }
+        else if (hora < 19) {
+            mensaje = "¡Buenas tardes! Bienvenido a mi página web.";
+        }
+        else {
+            mensaje = "¡Buenas noches! Bienvenido a mi página web.";
+        }
+
+        // Mostrar mensaje emergente
+        alert(mensaje);
+
+    </script>
+
+</body>
+
+</html>
